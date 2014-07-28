@@ -13,4 +13,6 @@ path=($HOME/local/bin /usr/local/bin $path)
 export PATH
 
 # Machine specific settings go here:
-source ~/.zshenv_local
+if [[ -f ~/.zshenv_local ]]; then
+	source ~/.zshenv_local
+fi

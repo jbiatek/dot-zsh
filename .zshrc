@@ -79,7 +79,9 @@ compdef -d mmd
 
 
 # Machine specific settings go here.
-source ~/.zshrc_local
+if [[ -f ~/.zshrc_local ]]; then
+	source ~/.zshrc_local
+fi
 
 
 # Things I like to see at startup:
